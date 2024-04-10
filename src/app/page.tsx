@@ -3,93 +3,41 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div>
+      <header>
+      <div className={styles.wrapper}>
+        <nav className={styles.header__nav}>
+          <ul className={styles.header__list}>
+            <h1 className={styles.header__item1}>PROMAIR</h1>
+            <li className={styles.header__ypravlenie}></li>
+              <div className={styles.header__item}>Главная</div>
+            <li className={styles.header__ypravlenie}></li>
+              <div className={styles.header__item}>О компании</div>
+            <li className={styles.header__ypravlenie}></li>
+              <div className={styles.header__item}>Проекты</div>
+            <li className={styles.header__ypravlenie}></li>
+              <div className={styles.header__item}>Новости</div>
+            <li className={styles.header__ypravlenie}></li>
+              <div className={styles.header__item}>Отзывы и сертификаты</div>
+            <li className={styles.header__ypravlenie}></li>
+              <div className={styles.header__item}>Контанкты</div>
+              <div className={styles.header__kartinka}>
+              <Image src="Images/mappoint.svg" width={13} height={17} alt="Not found" />
+            </div>
+                <div className={styles.header__item2}>Москва</div>
+            <li className={styles.header__ypravlenie}></li>
+            <div className={styles.header__kartinka1}>
+              <Image src="Images/phone.svg" width={17} height={17} alt="Not found" />
+            </div>
+            <div className={styles.header__item2}>+7 (900) 111-22-33</div>
+          </ul>
+        </nav>
       </div>
+    </header><main>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      </main><footer>
+
+      </footer>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
