@@ -1,33 +1,16 @@
-.header__list {
+.home {
   display: flex;
-  list-style: none;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0px;
-  margin-right: 25px;
+  justify-content: space-between;
+  margin: 0 100px;
 }
-.wrapper{
-  display:flex;
-  flex-direction:column;
-  max-width: 1500px;
-  margin: 0 auto;
+.main{
+  margin: 0 100px;
 }
-.header__item1{
-  background-color: #6AB8EE;
-  border-radius: 100px;
-  color: aliceblue;
-  text-align: center;
-  margin-left: 50px;
-  width: 130px;
-  height: 30px;
-}
-.header__kartinka{
-  margin-left: 30px;
-  margin-right: 0px;
-}
-.header__kartinka1{
-  margin-left: 5px;
-}
-.header__item2{
-  margin-right: 15px;
-}
+
+
