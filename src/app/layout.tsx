@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import ReactQueryProvider from "@/providers/react-query";
 import Header from "./components/Header/Header";
 import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
+import './globals.css'
 
 
 const inter = Inter({ subsets: ["latin"] });

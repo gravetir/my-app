@@ -8,7 +8,7 @@ export default function Main() {
                     <div className={styles.leftColumn}>
                         {/* <div className={styles.wrapper}> */}
                         <div className={styles.main__columns}>
-                                <h3 className={styles.main__ypravlenie}>
+                                <h3 className={styles.main__ypravlenie1}>
                                 Компрессоры
                                 </h3>
                                 <span className={styles.main__ypravlenie}>
@@ -32,7 +32,7 @@ export default function Main() {
                                 <span className={styles.main__ypravlenie}>
                                 Компрессоры Б/У
                                 </span>
-                                <h3 className={styles.main__ypravlenie}>
+                                <h3 className={styles.main__ypravlenie1}>
                                 Подготовка и хранение сжатого воздуха
                                 </h3>
                                 <span className={styles.main__ypravlenie}>
@@ -50,7 +50,7 @@ export default function Main() {
                                 <span className={styles.main__ypravlenie}>
                                 Сепораторы
                                 </span>
-                                <h3 className={styles.main__ypravlenie}>
+                                <h3 className={styles.main__ypravlenie1}>
                                 Компрессоры
                                 </h3>
                                 <span className={styles.main__ypravlenie}>
@@ -74,7 +74,7 @@ export default function Main() {
                                 <span className={styles.main__ypravlenie}>
                                 Компрессоры Б/У
                                 </span>
-                                <h3 className={styles.main__ypravlenie}>
+                                <h3 className={styles.main__ypravlenie1}>
                                 Подготовка и хранение сжатого воздуха
                                 </h3>
                                 <span className={styles.main__ypravlenie}>
@@ -161,9 +161,9 @@ export default function Main() {
                                 </button>
 
                                 <div className={styles.main__rec}>
-                                    <div className={styles.mainrec__design}>
+                                    {/* <div className={styles.mainrec__design}>
                                         <Image src= "Images/design.svg" width={647} height={596} alt="Not found" />
-                                    </div>
+                                    </div> */}
                                     <div className={styles.mainrec__left}>
                                         <span className={styles.mainrec__text1}>Продажа компрессоров</span>
                                         <span className={styles.mainrec__text2}>по ценам производителя</span>
@@ -176,7 +176,7 @@ export default function Main() {
                                     </div>
                                     <div className={styles.mainrec__right}>
                                         <div className={styles.mainrec__img}>
-                                            <Image src="Images/compressor.svg" width={177} height={180} alt="Not found" />
+                                            <Image src="Images/compressor.svg" width={150} height={180} alt="Not found" />
                                         </div>
                                         <span className={styles.mainrec__text5}>Поршневой компрессор</span>
                                         <span className={styles.mainrec__text5}>REMEZA СБ4/С-24.OLD15</span>
@@ -244,7 +244,7 @@ export default function Main() {
                                         <div className={styles.main__textimg1}>Инженерное решение для</div>
                                         <div className={styles.main__textimg1}>торгового дома «Албес»</div>
                                     </div>
-                                    <i className={styles.left__arrow}><Image src="Images/Right.svg" width={7} height={12} alt="Not found" /></i> 
+                                    <i className={styles.right__arrow}><Image src="Images/Right.svg" width={7} height={12} alt="Not found" /></i> 
                                 </div>    
 
                             <div className={styles.main__review}>
@@ -314,11 +314,10 @@ export default function Main() {
                                                 <div className={styles.mainnews__columns3}>5.02.2022</div>
                                             </div>    
                                         </div>
-                                        <i className={styles.left__arrow}><Image src="Images/Right.svg" width={7} height={12} alt="Not found" /></i>
+                                        <i className={styles.right__arrow}><Image src="Images/Right.svg" width={7} height={12} alt="Not found" /></i>
                                     </div>
                         
                         </div>
         </div>
-    // </div>
     );
 }
