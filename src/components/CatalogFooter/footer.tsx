@@ -1,9 +1,9 @@
 'use client';
-import styles from "./Footer.module.css";
+import styles from "./footer.module.css";
 import Image from "next/image";
-export default function Footer() {
+export default function CatalogFooter() {
     return (
-    <div className={styles.footer__list}>
+        <div className={styles.footer__list}>
         <div className={styles.footer__up}>
             <div className={styles.footer__column}>
                 <div className={styles.footer__logo}>

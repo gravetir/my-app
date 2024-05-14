@@ -180,6 +180,16 @@ transition: transform 0.5s;
 .active {
     transform: translateX(0);
 } */
+@media (max-width: 1202px){
+  .headermenu__columns{
+    font-size: 11px;
+  }
+}
+@media (max-width: 1068px){
+  .headermenu__columns{
+    font-size: 10px;
+  }
+}
 @media (max-width: 1050px){
   .headerNav {
     display: flex;

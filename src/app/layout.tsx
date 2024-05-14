@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import './globals.css';
 import ReactQueryProvider from "@/providers/react-query";
-import Header from "./components/Header/Header";
-import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
-import './globals.css'
+import Catalog from "./Catalog/page";
+import HeaderMenu from "@/components/HeaderMenu/HeaderMenu";
+import Footer from "@/components/Footer/Footer";
+import Main from "@/components/Main/Main";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,9 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={inter.className}>{children}
       <ReactQueryProvider children={undefined}>
+        {/* <HeaderMenu/> */}
+        {/* <Main/> */}
+        {/* <Footer/> */}
         </ReactQueryProvider>
         </body>
     </html>

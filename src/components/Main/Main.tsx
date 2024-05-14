@@ -1,6 +1,9 @@
 'use client';
 import styles from "./Main.module.css";
 import Image from "next/image";
+import Link from "next/link";
+
+
 
 export default function Main() {
   return (
@@ -170,8 +173,10 @@ export default function Main() {
                                         <span className={styles.mainrec__text3}>14 лет на рынке компрессорного</span>
                                         <span className={styles.mainrec__text4}>оборудования</span>
                                         <div className={styles.button__rec}>
+                                            <Link href="/Catalog" className={styles.catalog}>
                                             <span className={styles.buttontext__rec}>Перейти в каталог</span>
                                             <i className={styles.arrow__icon}><Image src= "Images/Arrow1.svg" width={16} height={16} alt="Not found" /></i>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className={styles.mainrec__right}>
