@@ -2,10 +2,21 @@
 import styles from "./Main.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 
 
 export default function Main() {
+    const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+      }
+      
+      const handleMouseLeave = () => {
+        setIsHovered(false);
+      }
+    //   const buttonText = isHovered ? 'В корзину' : null;
+    //   const buttonTextColor = isHovered ? '#FFFFFF' : '#02131F';
   return (
     <div className={styles.container}>
                     <div className={styles.leftColumn}>
@@ -198,7 +209,8 @@ export default function Main() {
                                             <div className={styles.main__textimg}>Бензиновый генератом</div>
                                             <div className={styles.main__textimg}>RATO R8000ID</div>
                                             <button className={styles.main__button1}>
-                                                <div className={styles.maintext__button1}>В корзину</div>
+                                                {/* <div className={styles.maintext__button1}>70 000 руб.</div> */}
+                                                {/* <div className={styles.maintext1__button}>{buttonText}</div> */}
                                             </button>
                                         </div>
                                             <div className={styles.main__img}>
@@ -293,7 +305,7 @@ export default function Main() {
                                             <div className={styles.mainnews__columns}>воздухоподготовки</div>
                                             <div className={styles.mainnews__columns}>ARIACOM</div>
                                             <div className={styles.mainnews__columns1}>Продукция итальянской компании ARIACOM </div>
-                                            <div className={styles.main__down}>
+                                            <div className={styles.main__down1}>
                                                 <div className={styles.mainnews__columns2}>Читать далее</div>
                                                 <div className={styles.mainnews__columns3}>20.01.2022</div>
                                             </div>
@@ -314,7 +326,7 @@ export default function Main() {
                                             <div className={styles.mainnews__columns}>Пополнен ассортимент компрессоров Atmos</div>
                                             <div className={styles.mainnews__columns}>компрессоров Atmos</div>
                                             <div className={styles.mainnews__columns1}>Добавлены новинки в ассортимент производителя Remeza. </div>
-                                            <div className={styles.main__down}>
+                                            <div className={styles.main__down2}>
                                                 <div className={styles.mainnews__columns2}>Читать далее</div>
                                                 <div className={styles.mainnews__columns3}>5.02.2022</div>
                                             </div>    

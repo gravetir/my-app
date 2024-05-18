@@ -5,6 +5,7 @@ import Link from "next/link";
 import clsx from 'clsx';
 import { useCategoriesQuery } from "@/hooks/useCategoryQuery";
 import { useState } from "react";
+import CategoryCard from "../CatalogCard/CatalogCard";
 
 export default function CatalogMain() {
     const [state, setState] = useState(0);
@@ -189,7 +190,7 @@ export default function CatalogMain() {
                         className={clsx(styles.catalogCategoryItem, categoryId === 0 && styles.active)}
                         onClick={() => setCategoryId(0)}
                     >Все</li> */}
-                    {data?.map(category => (
+                    {/* {data?.map(category => (
                         <li
                             key={category.id}
                             className={clsx(styles.catalogCategoryItem, categoryId === category.id && styles.active)}
@@ -200,7 +201,12 @@ export default function CatalogMain() {
                             <div className={styles.descript}>{category.description}</div>
                         </li>
                        
-                    ))}
+                    ))} */}
+                    <div className={styles.catalogGrid}>
+                        {data?.map(category => (
+                            <CategoryCard {...category} key={category.id} />
+                        ))}
+                    </div>
                 </ul>
         </div>
 

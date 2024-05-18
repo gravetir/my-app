@@ -179,12 +179,12 @@ export default function ProductMain() {
                     {/* <button onClick={() => setState(state - 1)}>-</button>
                     <div>{state}</div>
                     <button onClick={() => setState(state + 1)}>+</button> */}
-                    <ul className={styles.catalogProduct}>
+                     <ul className={styles.catalogProduct}>
                     {/* <li
                         className={clsx(styles.catalogProductItem, productId === 0 && styles.active)}
                         onClick={() => setProductId(0)}
                     >Все</li> */}
-                    {data?.map(product => (
+                    {/* {data?.map(product => (
                         <li
                             key={product.id}
                             className={clsx(styles.catalogProductItem, productId === product.id && styles.active)}
@@ -200,7 +200,14 @@ export default function ProductMain() {
                             </button>
                         </li>
                        
-                    ))}
+                    ))} */}
+                    
+                    <div className={styles.catalogGrid}>
+                        {data?.map(product => (
+                            <ProductCard {...product} key={product.id} />
+                        ))}
+                    </div>
+                    
                 </ul>
                 <div className={styles.numeration}>
                 <i className={styles.left__arrow}><Image src="Images/Left.svg" width={7} height={12} alt="Not found" /></i>

@@ -202,7 +202,7 @@ transition: transform 0.5s;
     width: 100%;
     height: 100%;
     background: #FFFFFF;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.5s; 
     z-index: 200;
   }
@@ -210,9 +210,13 @@ transition: transform 0.5s;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-right: 90px;
+    margin-top: 20px;
   }
   .header__item{
     margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
   }
   .header__icons{
     display: flex;
@@ -261,6 +265,7 @@ transition: transform 0.5s;
     margin-left: auto;
     color:#6AB8EE;
     transition: opacity 0.2s;
+    margin-right: 30px;
   }
 
   .cross :hover {
@@ -276,7 +281,27 @@ transition: transform 0.5s;
   }
   @media(max-width: 375px){
     .header__menu{
+      display: flex;
+      justify-content: center;
       margin: 0;
+    }
+    .cross {
+      font-size: 24px;
+      display: block;
+      margin-left: auto;
+      color:#6AB8EE;
+      transition: opacity 0.2s;
+      margin-right: 20px;
+    }
+    .cross :hover {
+      opacity: 0.5;
+    }
+    .headermenu__columns{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 90px;
+      margin-top: 20px;
     }
 
   }

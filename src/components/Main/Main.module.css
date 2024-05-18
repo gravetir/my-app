@@ -48,7 +48,7 @@
 }
 .main__rec{
     display: flex;
-    width: 70%;
+    width: 88%;
     height: 315px;
     background-color: #005692;
     margin-top: 12px;
@@ -169,10 +169,28 @@
 .main__button1{
     width: 186px;
     height: 46px;
-    background-color: #6AB8EE;
+    background-color: #FFFFFF;
     border-radius: 6px;
     margin-top: 10px;
+}
+.main__button1:hover{
+    color: #fff;
+    background: #6AB8EE;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
     border: none;
+    border-radius: 6px; 
+}
+.main__button1::before{
+    content: "70 000 руб.";
+    font-size: 15px;
+    font-weight: 400;
+}
+.main__button1:hover::before{
+    content: "В корзину";
+    font-size: 15px;
+    font-weight: 400;
 }
 .main__button2{
     width: 186px;
@@ -181,14 +199,17 @@
     background-color: #FFFFFF;
     margin-top: 10px;
 }
+.maintext1__button{
+    font-size: 14px;
+    font-weight: 400;
+}
 .maintext__button1{
     font-size: 16px;
-    color:#FFFFFF;
+    color: #02131F;
 }
 .maintext__button2{
     font-size: 16px;
     color: #02131F;
-    ;
 }
 .main__project1{
     display: grid;
@@ -243,7 +264,16 @@
 .main__down{
     display: flex;
     justify-content:space-between;
-
+}
+.main__down1{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 12px;
+}
+.main__down2{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 25px;
 }
 .mainnews__columns2{
     text-decoration-line: underline;
@@ -260,6 +290,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2400px;
     }
     .rightColumn{
         display: flex;
@@ -269,7 +300,7 @@
     }
     .main__rec{
         height: 632px;
-        width: 332px;
+        width: 400px;
         display: flex;
         flex-direction: column;
     }
@@ -277,8 +308,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
+        grid-column-gap: 15px;
         grid-row-gap: 20px;
+    }
+    .main__project{
+        display: flex;
+        flex-direction: column;
     }
     .main__project1{
         display: flex;
@@ -294,15 +329,26 @@
         display: flex;
         flex-direction: column;
     }
+    .main__review{
+        display: flex;
+        flex-direction: column;
+    }
     .main__review1{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
+    .main__news{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (max-width:1024px){
+    .container{
+        display: block;
+    }
     .leftColumn{
         display: none;
     }
@@ -322,7 +368,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
+        grid-column-gap: 15px;
         grid-row-gap: 20px;
     }
     .main__project1{

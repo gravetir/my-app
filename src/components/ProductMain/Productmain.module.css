@@ -122,6 +122,7 @@
     justify-content: space-between;
     margin-top: 80px;
     margin-bottom: 21px;
+    margin-right: 20px;
 }
 .main__button3{
     display: flex;
@@ -158,18 +159,19 @@
 .maintext__button2{
     font-size: 16px;
     color: #02131F;
-    ;
 }
 .left__arrow{
     margin-top: 30px;
 }
 .right__arrow{
     margin-top: 30px;
+    margin-left: 10px;
 }
 .numeration{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 20px;
 }
 .number{
     margin-top: 20px;
@@ -183,6 +185,36 @@
     grid-template-rows: 1fr;
     grid-column-gap: 21px;
     grid-row-gap: 0px;
+}
+@media (max-width: 1268px){
+    .numeration{
+        display: none;
+    }
+    .catalogGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .main__project{
+        display: flex;
+        flex-direction: column;
+    }
+    .main__project1{
+        display: flex;
+        flex-direction: column;
+    }
+    .main__img1{
+        margin-bottom: 10px;
+    }
+    .main__button{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .left__arrow{
+        margin-bottom: 20px;
+    }
 }
 @media (max-width:1200px){
     .numeration{
@@ -205,12 +237,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 3600px;
     }
     .rightColumn{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .catalogGrid{
+        display: flex;
+        flex-direction: column;
     }
 }
 
