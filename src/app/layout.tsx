@@ -6,6 +6,8 @@ import Catalog from "./Catalog/page";
 import HeaderMenu from "@/components/HeaderMenu/HeaderMenu";
 import Footer from "@/components/Footer/Footer";
 import Main from "@/components/Main/Main";
+// import Provider from "@/providers/Provider";
+import { SessionProvider } from "next-auth/react";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,11 +25,13 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>{children}
+      {/* <SessionProvider> */}
       <ReactQueryProvider children={undefined}>
         {/* <HeaderMenu/> */}
         {/* <Main/> */}
         {/* <Footer/> */}
         </ReactQueryProvider>
+        {/* </SessionProvider> */}
         </body>
     </html>
   );
