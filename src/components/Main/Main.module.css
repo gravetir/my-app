@@ -176,9 +176,9 @@
 .main__button1:hover{
     color: #fff;
     background: #6AB8EE;
-    tansition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
+    tansition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
     border: none;
     border-radius: 6px; 
 }
