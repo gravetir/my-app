@@ -55,7 +55,7 @@ export default function ProductHeaderMenu() {
             </div>
             <div className={styles.header__icons}>
               <div className={styles.header__img}>
-                <Image src="Images/phone.svg" width={17} height={17} alt="Not found" />
+                <Image src="/Images/Phone.svg" width={17} height={17} alt="Not found" />
               </div>
               <li className={styles.header__item}>+7 (900) 111-22-33</li>
             </div>

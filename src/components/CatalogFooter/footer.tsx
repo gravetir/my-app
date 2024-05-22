@@ -57,7 +57,7 @@ export default function CatalogFooter() {
                 </div>
                 <div className={styles.footer__des}>
                     <div className={styles.footer__img}>
-                        <Image src="Images/phone.svg" width={13} height={17} alt="Not found" />
+                        <Image src="/Images/Phone.svg" width={13} height={17} alt="Not found" />
                     </div>
                     <span className={styles.footer__item}>
                         +7 (900) 111-22-33
