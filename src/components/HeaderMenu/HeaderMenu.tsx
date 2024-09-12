@@ -8,6 +8,10 @@ import Link from "next/link";
 
 export default function HeaderMenu() {
   const [isActive, setIsActive] = useState(false)
+  const handleLogout = () => {
+    // Удалить токен из localStorage
+    localStorage.removeItem('token'); }
+  const token = localStorage.getItem('token')
   // const { data: session } = useSession();
   // console.log({session})
   return (
@@ -63,30 +67,11 @@ export default function HeaderMenu() {
               </div>
               <li className={styles.header__item}>+7 (900) 111-22-33</li>
             </div>
-            {/* {session?.data && <Link href="/profile">Profile</Link>}
-                {session?.data ? (
-                <Link href="#" onClick={() => signOut({ callbackUrl: "/" })}>
-                  Sign Out
-                </Link>
-              ) : (
-                <Link href="/signin">SignIn</Link>
-              )} */}
-                <div className="bg-gradient-to-b from-cyan-50 to-cyan-200 p-2 flex gap-5 ">
-                <div className="ml-auto flex gap-2">
-                  {/* {session?.user ? (
-                    <>
-                      <p className="text-sky-600"> {session.user.username}</p>
-                      <button className="text-red-500" onClick={() => signOut()}>
-                        Sign Out
-                      </button>
-                    </>
-                  ) : (
-                    <button className="text-green-600" onClick={() => signIn()}>
-                      Sign In
-                    </button>
-                  )} */}
+                <div className={styles.reg}>
+                <Link href="/register">SignIn</Link>
+                <Link href="/" onClick={handleLogout}>{token?("signout"):"user"}</Link>
+                <Link href="/login">Login</Link>
                 </div>
-              </div>
           </ul>
         </nav>
 

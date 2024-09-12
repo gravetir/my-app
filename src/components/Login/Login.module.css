@@ -1,0 +1,36 @@
+.main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.input{
+    margin-top: 50px;
+    width: 436px;
+    height: 46px;
+    color:#02131F; 
+}
+.input1{
+    margin-top: 20px;
+    width: 436px;
+    height: 46px;
+    color:#02131F; 
+}
+.button{
+    width: 255px;
+    height: 46px;
+    border-radius: 6px;
+    margin-left: 20px;
+    background-color: #6AB8EE;
+    border-radius: 6px;
+    border: none;
+    color: #FFFF;
+    margin-top: 20px;
+    margin-right: 10px;
+}

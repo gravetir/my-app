@@ -10,7 +10,7 @@ export default function ProductCard(props: Product)
     return (
         <div className={styles.card}>
             <div className={styles.cardImage}>
-            <img src={`http://178.154.206.159:8888/api/product/image/${props.image}`} alt="Not found" />
+            <img src={`http://localhost:8888/api/product/image/${props.image}`} alt="Not found" />
             </div>
 
             <div className={styles.cardDesc}>
