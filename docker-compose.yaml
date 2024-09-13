@@ -1,12 +1,17 @@
 version: '3.9'
 
+# services:
+#   postgres_db:
+#     image: postgres:15.3-bullseye
+#     container_name: postgres_db
+#     restart: always
+#     env_file:
+#       - docker.env
+#     ports:
+#       - "5432:5432"
 services:
-  postgres_db:
-    image: postgres:15.3-bullseye
-    container_name: postgres_db
-    restart: always
-    env_file:
-      - docker.env
+  nextjs-api:
+    image: nextjs-api
+    container_name: nextjs-api
     ports:
-      - "5432:5432"
-      
+      - "3000:3000"

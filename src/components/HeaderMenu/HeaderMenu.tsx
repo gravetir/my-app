@@ -10,8 +10,15 @@ export default function HeaderMenu() {
   const [isActive, setIsActive] = useState(false)
   const handleLogout = () => {
     // Удалить токен из localStorage
-    localStorage.removeItem('token'); }
-  const token = localStorage.getItem('token')
+    
+    let token = null
+    if (global?.window !== undefined) {
+      // Now it's safe to access window and localStorage
+      localStorage.removeItem('token'); }
+      token = localStorage.getItem('token')
+    }  
+
+
   // const { data: session } = useSession();
   // console.log({session})
   return (
@@ -69,7 +76,7 @@ export default function HeaderMenu() {
             </div>
                 <div className={styles.reg}>
                 <Link href="/register">SignIn</Link>
-                <Link href="/" onClick={handleLogout}>{token?("signout"):"user"}</Link>
+                {/* <Link href="/" onClick={handleLogout}>{token?"signout":"user"}</Link> */}
                 <Link href="/login">Login</Link>
                 </div>
           </ul>

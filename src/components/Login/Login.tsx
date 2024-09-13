@@ -1,7 +1,7 @@
 'use client'
+import Link from 'next/link';
 import { SetStateAction, useState } from 'react'; // Импортируем useState для управления состоянием
 import styles from './Login.module.css'; // Импортируем стили
-import Link from 'next/link';
 
 export default function Log() {
     const [username, setUsername] = useState(''); // Состояние для имени пользователя
@@ -28,6 +28,7 @@ export default function Log() {
                 setIsRegistrationSuccess(true);
                 const token = await response.json()
                 localStorage.setItem('token',token)
+
                 
                 // Обработайте успешную регистрацию (например, перенаправление, очистка формы)
             } else {

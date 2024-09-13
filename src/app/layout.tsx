@@ -8,6 +8,7 @@ import Footer from "@/components/Footer/Footer";
 import Main from "@/components/Main/Main";
 // import Provider from "@/providers/Provider";
 import { SessionProvider } from "next-auth/react";
+import { Suspense } from "react";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,12 +26,16 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>{children}
+      <Suspense fallback={<></>}>
       {/* <SessionProvider> */}
-      <ReactQueryProvider children={undefined}>
+      <ReactQueryProvider>
+      <span>Child 1</span>
+      <span>Child 2</span>
         {/* <HeaderMenu/> */}
         {/* <Main/> */}
         {/* <Footer/> */}
         </ReactQueryProvider>
+        </Suspense>
         {/* </SessionProvider> */}
         </body>
     </html>
